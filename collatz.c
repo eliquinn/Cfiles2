@@ -1,8 +1,7 @@
 #include <stdio.h>
 
-typedef unsigned long long int number;
 
-number col(number n) {
+int col(int n) {
     if (n % 2 == 0) {
         return n/2;
     } else {
@@ -12,10 +11,10 @@ number col(number n) {
 
 int main() 
 {
-    number num = 670617279;
+    int num = 1000;
     for (int i = 0; i < 1000; i++) {
         num = col(num);
-        printf("%llu-", num);
+        printf("%d-", num);
     }
     return 0; 
 }
